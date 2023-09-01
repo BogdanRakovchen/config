@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server
+    # Профиль Spring, связанный с репозиторием (файловая система) и git
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+        git:
+          uri: https://github.com/BogdanRakovchen/config-props.git
+          searchPaths: config
+          username: BogdanRakovchen
+          password: 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
+server:
+  port: 8071
+
+encrypt:
+  key: s1e2c3r4e5t6k7e8y9
