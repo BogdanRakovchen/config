@@ -1,7 +1,6 @@
 spring:
   application:
     name: config-server
-    # Профиль Spring, связанный с репозиторием (файловая система) и git
   profiles:
     active: git
   cloud:
